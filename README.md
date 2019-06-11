@@ -1,2 +1,2 @@
 # flex-basics
-cheat sheet for fles
+cheat sheet for flex
