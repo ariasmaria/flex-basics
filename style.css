@@ -1,19 +1,28 @@
+
+
+/*CONDITIONS FOR THE CONTAINER (OR PARENT)*/
 .flex-container {
-    display:flex;
-    flex-direction:row; /*for making them horizontally*/  /*column;  for putting all the items in a column*/
-    flex-wrap: wrap; /*if there is no more space, the next items will be placed underneath*/
-    /*flex-flow: row wrap;  For making a shorcut between direction and wrap*/
+  display: flex;
+  flex-direction: row; /*for making them horizontally*/ /*column;  for putting all the items in a column*/
+  flex-wrap: wrap; /*if there is no more space, the next items will be placed underneath*/
+  /*flex-flow: row wrap;  For making a shorcut between direction and wrap*/
 }
+
+
+
+
+/*CONDITIONS FOR THE ITEMS (OR CHILDREN)*/
 
 .item {
-    color: black;
-    background: lightgray;
-    margin: .5rem;
-    padding: 1rem;
-    text-align: center;
-    flex: 1; /*make the total of all items the same size of the page*/
+  color: black;
+  background: lightgray;
+  margin: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  flex: 1; /*make the total of all items the same size of the page*/
 }
 
-.item:first-child{
-    flex: 2; /* this makes the first item to take "2 out of 16" spaces of the page (the other 14 spaces were the ones defined in Item (flex 1 per item!)*/
+.item:first-child {
+  flex: 2 200px; /* this makes the first item to take "2 out of 16" spaces of the page (the other 14 spaces were the ones defined in Item (flex 1 per item!)*/
+  /* the 200px sets that the item cannot be smaller than 200px*/
 }
